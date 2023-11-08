@@ -1,0 +1,326 @@
+/*various settings*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-image: url("images/texture.jpg");
+    background-size: contain;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6F988A;
+    height: 5.5em;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Train One', cursive;
+    letter-spacing: .2em;
+    padding-left: .6em;
+    font-weight: 300;
+    font-size: 2.4em;
+}
+
+header nav .items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+header nav a:hover {
+    color: #F9C999;
+    text-decoration: underline #F9C999;
+}
+
+/*banner*/
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+}
+
+.summary {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    width: 70%;
+}
+
+.summary h1 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: .04em;
+    font-size: 2.7em;
+    margin-top: 1.2em;
+}
+
+.summary p {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding-top: .6em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: #fff;
+    text-transform: uppercase;
+    width: 70%;
+    margin-top: 2.4em;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    padding: .05em 2em;
+    border-radius: .1em;
+}
+
+.b1 {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #353B3C;
+}
+
+.b1:hover {
+    background-color: rgb(174, 174, 174);
+    border: 2px solid rgb(174, 174, 174);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.b2 {
+    border: 2px solid #fff;
+}
+
+.b2:hover {
+    background-color: #fff;
+    color: #353B3C;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.plus {
+    font-size: 2em;
+}
+
+/*section Events + section Themes*/
+
+#events, #themes {
+    margin-top: 5em;
+}
+
+#events h2, #themes h2 {
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: bold;
+    color: #353B3C;
+    padding: .6em;
+    align-self: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: .8em;
+}
+
+.separator {
+    display: block;
+    margin: -1em auto 1.8em auto;
+    opacity: .2;
+}
+
+.chapterTitle {
+    line-height: .4;
+}
+
+/*section Events*/
+
+.posters {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    /*background-color: rgba(249, 201, 153, .8);*/
+    width: 100%;
+    margin: -.65em auto 0 auto;
+    padding: 0 0 2em 0;
+}
+
+.posters li {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin: .6em;
+    border-radius: 3px;
+}
+
+.posters img {
+    width: 160px;
+    height: 160px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.posters img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.8s;
+}
+
+.posters p {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: .7em;
+    color: #353B3C;
+    background-color: rgba(238, 240, 242, .8);
+    padding: .1em 1.2em;
+}
+
+.posters .date {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+/*section Themes*/
+
+.black {
+    position: relative;
+    content: none;
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+}
+
+.intersection {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .9;
+}
+
+.flex {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(249, 201, 153, .7);
+    padding: 2em 4em;
+}
+
+.shop {
+    width: 86%;
+    border-radius: 5px;
+    margin-left: 3.5em;
+    opacity: .9;
+}
+
+.themes {
+    background-image: url("images/casque.jpg");
+    background-size: contain;
+    display: grid;
+    width: 200em;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1px;
+    border-radius: 10px;
+    margin-right: 3.5em;
+}
+
+.theme {
+    display: grid;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+.theme:hover {
+    cursor: pointer;
+    font-size: 1.7em;
+    letter-spacing: .06em;
+    background-color: rgba(111, 152, 138, .3);
+    transition: font-size 0.5s, letter-spacing 0.5s;
+}
+
+.theme:active {
+    color: #F9C999;
+}
+
+/*Media Queries*/
+
+
+@media only screen and (max-width: 1150px) {
+    .shop {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .themes {
+        width: 100%;
+        margin: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+      }
+
+    .intersection {
+        width: 100%;
+    }
+
+    .separator {
+        display: none;
+    }
+}
