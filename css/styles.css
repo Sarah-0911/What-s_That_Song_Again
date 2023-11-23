@@ -84,7 +84,7 @@ header nav a:hover {
 .buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 40px;
+    gap: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing: .1em;
@@ -323,4 +323,8 @@ header nav a:hover {
     padding: .05em .8em;
     font-size: .8em;
   }
+
+  .intersection {
+    object-fit: contain;
+}
 }
